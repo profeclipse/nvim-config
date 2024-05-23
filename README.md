@@ -28,7 +28,6 @@ Plugins:
 - mason-tool-installer.nvim
 - mason.nvim
 - neo-tree.nvim
-- neodev.nvim
 - noice.nvim
 - nui.nvim
 - nvim-autopairs
