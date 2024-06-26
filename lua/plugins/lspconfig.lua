@@ -60,6 +60,17 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["powershell_es"] = function()
+				require("lspconfig").powershell_es.setup({
+					filetypes = { "ps1", "psm1", "psd1" },
+					bundle_path = "~/AppData/Local/nvim-data/mason/packages/powershell-editor-services",
+					settings = { powershell = { codeFormatting = { Preset = "OTBS" } } },
+					init_options = {
+						enableProfileLoading = false,
+					},
+				})
+			end,
+
 			["lua_ls"] = function()
 				require("lspconfig").lua_ls.setup({
 					on_init = function(client)
